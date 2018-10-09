@@ -43,7 +43,35 @@ En sortie: [
  */
 
 function getFoodCategories(foods) {
-}
+const arr =[]
+foods.map(function (bool) {	
+if (bool.isVegetarian == true)	
+	arr.push(bool.food +' is suitable for vegetarians')
+else
+	arr.push(bool.food +' is not suitable for vegetarians')
+                          })
+return arr
+                                  }         
+
+getFoodCategories(  [
+    {
+      food: 'Bacon',
+      isVegetarian: false
+    },
+    {
+      food: 'Sausage',
+      isVegetarian: false
+    },
+    {
+      food: 'Tofu',
+      isVegetarian: true
+    },
+    {
+      food: 'Chick Pea',
+      isVegetarian: true
+    }
+  ]);
+
 
 
 
